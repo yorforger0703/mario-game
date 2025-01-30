@@ -144,7 +144,7 @@ footer a:hover {
 
 @media (max-width: 600px) {
     .game-board {
-        height: 100vh; 
+        height: 80vh; 
     }
 
     .mario {
@@ -169,4 +169,7 @@ footer a:hover {
     .jump {
         animation: jump 600ms ease-out;
     }
+
+
+
 }
