@@ -30,7 +30,7 @@
 }
 
 .jump {
-    animation: jump 31.25ms ease-out;
+    animation: jump 500ms ease-out;
 }
 
 .clouds {
@@ -161,7 +161,7 @@ footer a:hover {
     }
     
     .jump {
-        animation: jump 37.5ms ease-out;
+        animation: jump 600ms ease-out;
     }
     .meu-footer{
         border-bottom: 4.375rem solid rgb(184, 146, 21);
@@ -194,7 +194,7 @@ footer a:hover {
     }
     
     .jump {
-        animation: jump 37.5ms ease-out;
+        animation: jump 500ms ease-out;
     }
     .meu-footer{
         border-bottom: 16rem solid rgb(184, 146, 21);
