@@ -8,8 +8,8 @@
 
 .game-board {
     width: 100%;
-    height: 500px;
-    border-bottom: 15px solid rgb(35, 160, 35);
+    height: 31.25rem;
+    border-bottom: 0.9375rem solid rgb(35, 160, 35);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -19,26 +19,25 @@
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 80px;
+    width: 5rem;
     animation: pipe-animation 1.5s infinite linear;
 }
 
 .mario {
-    width: 150px;
+    width: 9.375rem;
     position: absolute;
     bottom: 0;
 }
 
 .jump {
-    animation: jump 500ms ease-out;
+    animation: jump 31.25ms ease-out;
 }
 
 .clouds {
     position: absolute;
-    width: 550px;
+    width: 34.375rem;
     animation: clouds-animation 20s infinite linear;
 }
-
 
 #restart-btn {
     display: none; 
@@ -46,29 +45,29 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 0.9375rem 1.875rem;
+    font-size: 1rem;
     font-family: 'Press Start 2P', cursive;
     background-color: #ffcc00;
-    border: 3px solid black;
+    border: 0.1875rem solid black;
     color: black;
     cursor: pointer;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 0px black;
+    letter-spacing: 0.125rem;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0px black;
     transition: 0.2s;
     z-index: 10; 
 }
 
 #restart-btn:hover {
     background-color: #ffaa00;
-    box-shadow: 2px 2px 0px black;
+    box-shadow: 0.125rem 0.125rem 0px black;
     transform: translate(-50%, -48%);
 }
 
 .meu-footer{
-    border-bottom: 70px solid rgb(184, 146, 21);
+    border-bottom: 6rem solid rgb(184, 146, 21);
 }
 
 footer {
@@ -78,10 +77,10 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     background-color: rgb(214, 112, 17);
     color: rgb(46, 26, 0);
-    padding: 10px;
+    padding: 0.625rem;
     align-items: end;
 }
 
@@ -94,10 +93,9 @@ footer a:hover {
     text-decoration: underline;  
 }
 
-
 @keyframes pipe-animation {
     from {
-        right: -80px;
+        right: -5rem;
     }
 
     to {
@@ -111,15 +109,15 @@ footer a:hover {
     }
 
     40% {
-        bottom: 180px;
+        bottom: 11.25rem;
     }
 
     50% {
-        bottom: 180px;
+        bottom: 11.25rem;
     }
 
     60% {
-        bottom: 160px;
+        bottom: 10rem;
     }
 
     100% {
@@ -129,7 +127,7 @@ footer a:hover {
 
 @keyframes clouds-animation {
     from {
-        right: -550px;
+        right: -34.375rem;
     }
 
     to {
@@ -137,39 +135,68 @@ footer a:hover {
     }
 }
 
-
-
-
-
-
 @media (max-width: 600px) {
     .game-board {
         height: 80vh; 
     }
 
     .mario {
-        width: 80px; 
+        width: 5rem;
     }
 
     .clouds {
-        width: 300px;
+        width: 18.75rem;
     }
 
     #restart-btn {
-        font-size: 14px;
-        padding: 12px 20px;
+        font-size: 0.875rem;
+        padding: 0.75rem 1.25rem;
     }
+    
     .pipe {
         position: absolute;
         bottom: 0;
-        width: 50px;
+        width: 3.125rem;
         animation: pipe-animation 1s infinite linear;
     }
     
     .jump {
-        animation: jump 600ms ease-out;
+        animation: jump 37.5ms ease-out;
+    }
+    .meu-footer{
+        border-bottom: 4.375rem solid rgb(184, 146, 21);
+    }
+}
+
+@media (min-width: 1920px) {
+    .game-board {
+        height: 80vh; 
     }
 
+    .mario {
+        width: 5rem;
+    }
 
+    .clouds {
+        width: 18.75rem;
+    }
 
+    #restart-btn {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.25rem;
+    }
+    
+    .pipe {
+        position: absolute;
+        bottom: 0;
+        width: 3.125rem;
+        animation: pipe-animation 1s infinite linear;
+    }
+    
+    .jump {
+        animation: jump 37.5ms ease-out;
+    }
+    .meu-footer{
+        border-bottom: 16rem solid rgb(184, 146, 21);
+    }
 }
