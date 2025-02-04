@@ -200,3 +200,36 @@ footer a:hover {
         border-bottom: 16rem solid rgb(184, 146, 21);
     }
 }
+
+@media (min-width: 2560px) {
+    .game-board {
+        height: 80vh; 
+    }
+
+    .mario {
+        width: 5rem;
+    }
+
+    .clouds {
+        width: 18.75rem;
+    }
+
+    #restart-btn {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.25rem;
+    }
+    
+    .pipe {
+        position: absolute;
+        bottom: 0;
+        width: 3.125rem;
+        animation: pipe-animation 1s infinite linear;
+    }
+    
+    .jump {
+        animation: jump 500ms ease-out;
+    }
+    .meu-footer{
+        border-bottom: 25rem solid rgb(184, 146, 21);
+    }
+}
