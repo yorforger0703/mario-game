@@ -225,7 +225,6 @@ footer a:hover {
         width: 3.125rem;
         animation: pipe-animation 1s infinite linear;
     }
-    
     .jump {
         animation: jump 500ms ease-out;
     }
